@@ -31,16 +31,10 @@ To change the overall look of your document, choose new Theme elements on the Pa
 
 
         $text = strtolower($sText);
-
-
-
-        //$searchfor = array("juya khela hoi", "accident", "bike", "prabir", "বিনা হেলমেটে তিন জন।");
-        //$searchfor = array("juya" => "juya khela hoi", "accident" => "accident", "theft" => "bike", "man" => "template", "rule" => "বিনা হেলমেটে তিন জন।");
-
         $searchfor = $aCategory;
 
         $result = customHighlights($sText, $searchfor);
-        print $result;
+        //print $result;
 
         $patterns = array();
         foreach ($searchfor as $key => $val) {
